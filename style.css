@@ -160,6 +160,19 @@ nav ul li:hover .nav_span_2 {
     transform: translate(-50%, -50%);
 }
 
+.menu_toggle {
+    display: none;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 22px;
+}
+
+.menu_toggle:hover {
+    box-shadow: none;
+}
+
 .nav_btn_link {
     text-decoration: none;
 }
@@ -175,6 +188,8 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    scroll-margin-top: 80px;
+    /* Fixes fixed header hiding section content */
 }
 
 .hero_main_box {
@@ -562,8 +577,34 @@ footer h3 {
         padding: 0 5%;
     }
 
-    nav .nav_links {
+    .menu_toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav_links {
         display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background: rgba(18, 16, 16, 0.95);
+        backdrop-filter: blur(15px);
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 20px 0;
+    }
+
+    .nav_links.active {
+        display: block;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
 
     section {
