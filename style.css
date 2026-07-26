@@ -27,7 +27,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Header & Nav */
 header {
   position: fixed;
   top: 0;
@@ -109,7 +108,6 @@ header {
   cursor: pointer;
 }
 
-/* Hero Section */
 .hero {
   min-height: 100vh;
   padding: 130px 8% 60px 8%;
@@ -238,7 +236,6 @@ header {
   color: #e5e7eb;
 }
 
-/* Hero Visual */
 .hero-visual {
   flex: 0.9;
   display: flex;
@@ -298,7 +295,6 @@ header {
   right: -30px;
 }
 
-/* Sections Layout */
 section {
   padding: 90px 8%;
   max-width: 1200px;
@@ -330,7 +326,6 @@ section {
   border-radius: 2px;
 }
 
-/* About Section */
 .about-card {
   background: var(--card-bg);
   border: 1px solid var(--card-border);
@@ -371,7 +366,6 @@ section {
   margin-top: 4px;
 }
 
-/* Skills Grid */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -417,7 +411,6 @@ section {
   color: var(--text-muted);
 }
 
-/* Projects Grid */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -536,7 +529,6 @@ section {
   cursor: not-allowed;
 }
 
-/* Footer */
 footer {
   border-top: 1px solid var(--card-border);
   padding: 60px 8% 30px 8%;
@@ -586,7 +578,6 @@ footer {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* Scroll Animation Styles */
 .reveal {
   opacity: 0;
   transform: translateY(30px);
@@ -598,7 +589,6 @@ footer {
   transform: translateY(0);
 }
 
-/* Responsive Media Queries */
 @media (max-width: 992px) {
   .hero-container {
     flex-direction: column-reverse;
