@@ -1,10 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kailash Suthar | MERN Stack Developer</title>
+    <title>Kailash Suthar | Full Stack MERN Developer</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Remix Icons -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -12,406 +13,397 @@
   </head>
 
   <body>
+    <!-- Navbar -->
     <header>
-      <nav>
-        <div class="logo">
-          <h2>Kailash<span>.dev</span></h2>
-        </div>
-
-        <!-- Hamburger Button for Mobile -->
-        <button
-          class="menu_toggle"
-          id="menu-btn"
-          aria-label="Toggle navigation"
-        >
-          <i class="ri-menu-line"></i>
-        </button>
-
-        <div class="nav_links" id="nav-menu">
-          <ul>
-            <li>
-              <a href="#home" class="navigation_links"
-                ><span class="nav_span_1">Home</span
-                ><span class="nav_span_2">Home</span></a
-              >
-            </li>
-            <li>
-              <a href="#about" class="navigation_links"
-                ><span class="nav_span_1">About</span
-                ><span class="nav_span_2">About</span></a
-              >
-            </li>
-            <li>
-              <a href="#skills" class="navigation_links"
-                ><span class="nav_span_1">Skills</span
-                ><span class="nav_span_2">Skills</span></a
-              >
-            </li>
-            <li>
-              <a href="#projects" class="navigation_links"
-                ><span class="nav_span_1">Projects</span
-                ><span class="nav_span_2">Projects</span></a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <a href="mailto:kailashsuthar4488@gmail.com" class="nav_btn_link">
-          <button class="nav_btn">
-            <span class="span-1">Contact me</span>
-            <span class="span-2">Contact me</span>
-          </button>
+      <nav class="navbar">
+        <a href="#home" class="logo">
+          <span class="logo-text">Kailash</span><span class="dot">.</span>
         </a>
+
+        <div class="nav-links" id="nav-menu">
+          <a href="#home" class="nav-item active">Home</a>
+          <a href="#about" class="nav-item">About</a>
+          <a href="#skills" class="nav-item">Skills</a>
+          <a href="#projects" class="nav-item">Projects</a>
+        </div>
+
+        <a href="mailto:kailashsuthar4488@gmail.com" class="nav-contact-btn">
+          Let's Talk <i class="ri-arrow-right-up-line"></i>
+        </a>
+
+        <button class="mobile-toggle" id="menu-btn" aria-label="Toggle menu">
+          <i class="ri-menu-3-line"></i>
+        </button>
       </nav>
     </header>
 
     <main>
-      <section class="hero_section" id="home">
-        <div class="hero_main_box">
-          <div class="hero_left_box">
-            <div class="inner">
-              <div class="hero_text">
-                <h4>Hi, I am</h4>
-                <h2>Kailash Suthar</h2>
-                <h1 class="matrix">MERN Stack Developer</h1>
-                <p>
-                  Driven MERN Stack Developer skilled in MongoDB, Express.js,
-                  React, Node.js, and AI API integrations (Gemini, OpenAI). I
-                  build scalable web applications, RESTful APIs, and responsive
-                  UI interfaces.
-                </p>
-              </div>
-              <div class="hero_btns">
-                <a
-                  href="https://sutharkailash4.github.io"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn_wrapper"
-                >
-                  <button class="resume_btn">
-                    <span class="span-1">Get Resume</span>
-                    <span class="span-2">Get Resume</span>
-                  </button>
-                </a>
-                <a
-                  href="mailto:kailashsuthar4488@gmail.com"
-                  class="btn_wrapper"
-                >
-                  <button id="contact_me">
-                    <span class="span-1">Contact me</span>
-                    <span class="span-2">Contact me</span>
-                  </button>
-                </a>
+      <!-- Hero Section -->
+      <section class="hero" id="home">
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="status-badge">
+              <span class="pulse-dot"></span> Available for Opportunities
+            </div>
+            <h1 class="hero-title">
+              Hi, I'm <span class="highlight">Kailash Suthar</span>
+            </h1>
+            <h2 class="hero-subtitle">MERN Stack & AI Integration Developer</h2>
+            <p class="hero-description">
+              Certified Full-Stack Developer specializing in building high-performance 
+              web applications using MongoDB, Express, React, and Node.js. Skilled in 
+              AI API integrations (Gemini, OpenAI, Mistral AI) and state management.
+            </p>
+
+            <div class="hero-actions">
+              <a
+                href="https://sutharkailash4.github.io"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn primary-btn"
+              >
+                <span>View Resume</span>
+                <i class="ri-file-download-line"></i>
+              </a>
+              <a href="mailto:kailashsuthar4488@gmail.com" class="btn secondary-btn">
+                <span>Contact Me</span>
+                <i class="ri-mail-send-line"></i>
+              </a>
+            </div>
+
+            <div class="quick-tech">
+              <span>Primary Tech Stack:</span>
+              <div class="tech-tags">
+                <span class="tag">React.js</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Express</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">Redux Toolkit</span>
               </div>
             </div>
           </div>
-          <div class="hero_right_box">
-            <div class="hero_img_box">
+
+          <div class="hero-visual">
+            <div class="image-frame">
               <img
-                class="profile_img"
                 src="image/IMG_20260220_084806.jpg"
                 alt="Kailash Suthar"
+                class="hero-img"
               />
+              <div class="floating-card top-card">
+                <i class="ri-code-s-slash-line"></i>
+                <div>
+                  <h4>Full Stack</h4>
+                  <p>MERN Certified</p>
+                </div>
+              </div>
+              <div class="floating-card bottom-card">
+                <i class="ri-robot-3-line"></i>
+                <div>
+                  <h4>AI Enabled</h4>
+                  <p>APIs Integrated</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="about_me_section reveal" id="about">
-        <div class="about_me_box">
-          <div class="about_me_heading">
-            <h3>About Me</h3>
-            <div class="heading_line"></div>
-          </div>
-          <div class="about_me_content">
+      <!-- About Section -->
+      <section class="about reveal" id="about">
+        <div class="section-header">
+          <span class="section-tag">BACKGROUND</span>
+          <h2>About Me</h2>
+          <div class="line"></div>
+        </div>
+
+        <div class="about-card">
+          <div class="about-text">
             <p>
-              I'm Kailash Suthar, a
-              <span class="about_span">MERN Stack Developer</span> based in
-              Rajasthan, India. Certified in Full Stack MERN Development from
-              Sheryians Coding School, I specialize in building complete
-              full-stack web applications with
-              <span class="about_span">MongoDB</span>,
-              <span class="about_span">Express.js</span>,
-              <span class="about_span">React.js</span>, and
-              <span class="about_span">Node.js</span>. I also integrate modern
-              AI capabilities (Gemini, OpenAI, Mistral AI), state management via
-              Redux Toolkit, and secure JWT authentication systems.
+              I am a passionate <span class="text-accent">MERN Stack Developer</span> based in 
+              Rajasthan, India. Having completed my specialized certification from 
+              <strong>Sheryians Coding School</strong>, I focus on turning complex problems into 
+              smooth, responsive, and robust web applications.
             </p>
-          </div>
-        </div>
-      </section>
+            <p>
+              My expertise spans modern frontend frameworks, backend server architectures, RESTful API development, secure JWT user authentication, and integrating dynamic Large Language Models (LLMs) into interactive web workflows.
+            </p>
 
-      <section class="skill_section reveal" id="skills">
-        <div class="skill_main_box">
-          <div class="skill_heading">
-            <h3>My Skills</h3>
-            <h4>Technologies & Tools I Work With</h4>
-          </div>
-          <div class="skill_img_box">
-            <div class="skill_box">
-              <div class="skill_icon_wrapper">
-                <img src="image/html-5-svgrepo-com.svg" alt="HTML5" />
+            <div class="about-stats">
+              <div class="stat-item">
+                <h3>Full-Stack</h3>
+                <p>MERN Certification</p>
               </div>
-              <button>
-                <span class="span-1">HTML5</span
-                ><span class="span-2">HTML5</span>
-              </button>
-            </div>
-            <div class="skill_box">
-              <div class="skill_icon_wrapper">
-                <img src="image/css3-svgrepo-com.svg" alt="CSS3" />
+              <div class="stat-item">
+                <h3>4+</h3>
+                <p>Key Projects Built</p>
               </div>
-              <button>
-                <span class="span-1">CSS3</span><span class="span-2">CSS3</span>
-              </button>
-            </div>
-            <div class="skill_box">
-              <div class="skill_icon_wrapper">
-                <img src="image/javascript-svgrepo-com.svg" alt="JavaScript" />
+              <div class="stat-item">
+                <h3>AI Ready</h3>
+                <p>API Integration</p>
               </div>
-              <button>
-                <span class="span-1">JAVASCRIPT</span
-                ><span class="span-2">JAVASCRIPT</span>
-              </button>
-            </div>
-            <div class="skill_box">
-              <div class="skill_icon_wrapper">
-                <img src="image/react-svgrepo-com.svg" alt="React" />
-              </div>
-              <button>
-                <span class="span-1">REACT.JS</span
-                ><span class="span-2">REACT.JS</span>
-              </button>
-            </div>
-            <div class="skill_box">
-              <div class="skill_icon_wrapper">
-                <i
-                  class="ri-node-tree"
-                  style="font-size: 50px; color: #e65f2e"
-                ></i>
-              </div>
-              <button>
-                <span class="span-1">NODE.JS</span
-                ><span class="span-2">NODE.JS</span>
-              </button>
-            </div>
-            <div class="skill_box">
-              <div class="skill_icon_wrapper">
-                <i
-                  class="ri-database-2-line"
-                  style="font-size: 50px; color: #e65f2e"
-                ></i>
-              </div>
-              <button>
-                <span class="span-1">MONGODB</span
-                ><span class="span-2">MONGODB</span>
-              </button>
-            </div>
-            <div class="skill_box">
-              <div class="skill_icon_wrapper">
-                <i
-                  class="ri-server-line"
-                  style="font-size: 50px; color: #e65f2e"
-                ></i>
-              </div>
-              <button>
-                <span class="span-1">EXPRESS.JS</span
-                ><span class="span-2">EXPRESS.JS</span>
-              </button>
-            </div>
-            <div class="skill_box">
-              <div class="skill_icon_wrapper">
-                <i
-                  class="ri-git-branch-line"
-                  style="font-size: 50px; color: #e65f2e"
-                ></i>
-              </div>
-              <button>
-                <span class="span-1">GIT & GITHUB</span
-                ><span class="span-2">GIT & GITHUB</span>
-              </button>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="project_section reveal" id="projects">
-        <div class="project_main_box">
-          <div class="project_heading">
-            <h3>Featured Projects</h3>
-            <h4>Key applications I've engineered</h4>
+      <!-- Skills Section -->
+      <section class="skills reveal" id="skills">
+        <div class="section-header">
+          <span class="section-tag">CAPABILITIES</span>
+          <h2>My Tech Stack</h2>
+          <div class="line"></div>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="icon-box">
+              <img src="image/react-svgrepo-com.svg" alt="React" />
+            </div>
+            <h3>React.js</h3>
+            <p>Frontend UI & Components</p>
           </div>
-          <div class="project_img_box">
-            <div class="project_box">
-              <div class="project_img_wrapper">
-                <i class="ri-brain-line project_placeholder_icon"></i>
-              </div>
-              <h4 class="project_title">Perplexity AI Chat App</h4>
-              <p class="project_description">
-                Full-stack MERN AI chat app with JWT authentication, Gemini AI
-                integration, Mistral AI title generation, and Redux Toolkit
-                state management.
+
+          <div class="skill-card">
+            <div class="icon-box">
+              <i class="ri-node-tree"></i>
+            </div>
+            <h3>Node.js</h3>
+            <p>Server & Runtime Environment</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="icon-box">
+              <i class="ri-server-line"></i>
+            </div>
+            <h3>Express.js</h3>
+            <p>Backend APIs & Routing</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="icon-box">
+              <i class="ri-database-2-line"></i>
+            </div>
+            <h3>MongoDB</h3>
+            <p>NoSQL Database & Schemas</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="icon-box">
+              <img src="image/javascript-svgrepo-com.svg" alt="JavaScript" />
+            </div>
+            <h3>JavaScript</h3>
+            <p>ES6+ Logic & Async Handling</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="icon-box">
+              <i class="ri-git-branch-line"></i>
+            </div>
+            <h3>Git & GitHub</h3>
+            <p>Version Control & Workflow</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="icon-box">
+              <img src="image/html-5-svgrepo-com.svg" alt="HTML5" />
+            </div>
+            <h3>HTML5</h3>
+            <p>Semantic Web Structure</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="icon-box">
+              <img src="image/css3-svgrepo-com.svg" alt="CSS3" />
+            </div>
+            <h3>CSS3</h3>
+            <p>Modern Layouts & Animations</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="projects reveal" id="projects">
+        <div class="section-header">
+          <span class="section-tag">PORTFOLIO</span>
+          <h2>Featured Work</h2>
+          <div class="line"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-preview">
+              <i class="ri-brain-line project-icon-large"></i>
+            </div>
+            <div class="project-info">
+              <h3>Perplexity AI Chat App</h3>
+              <p>
+                Full-stack MERN platform featuring JWT authentication, Gemini API for dynamic chat responses, Mistral AI title generation, and Redux Toolkit state sync.
               </p>
-              <div class="project_links_box">
+              <div class="card-tags">
+                <span>React</span>
+                <span>Node</span>
+                <span>Express</span>
+                <span>MongoDB</span>
+                <span>AI APIs</span>
+              </div>
+              <div class="project-links">
                 <a
-                  target="_blank"
-                  rel="noopener noreferrer"
                   href="https://github.com/Sutharkailash4"
-                  class="link_btn_anchor"
-                >
-                  <button class="link_btn">
-                    <span class="span-1">GitHub</span
-                    ><span class="span-2">GitHub</span>
-                  </button>
-                </a>
-                <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://sutharkailash4.github.io"
-                  class="link_btn_anchor"
+                  class="p-btn"
                 >
-                  <button class="link_btn">
-                    <span class="span-1">Live Demo</span
-                    ><span class="span-2">Live Demo</span>
-                  </button>
+                  <i class="ri-github-line"></i> Code
+                </a>
+                <a
+                  href="https://sutharkailash4.github.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="p-btn live"
+                >
+                  <i class="ri-external-link-line"></i> Live Demo
                 </a>
               </div>
             </div>
+          </div>
 
-            <div class="project_box">
-              <div class="project_img_wrapper">
-                <img
-                  src="image/productivity_dashboard.png"
-                  alt="Productivity Dashboard"
-                />
-              </div>
-              <h4 class="project_title">Productivity Dashboard</h4>
-              <p class="project_description">
-                Responsive dashboard featuring Pomodoro timer, hourly daily
-                planner, checklist, dark/light theme, and live weather API
-                updates.
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-preview image-preview">
+              <img src="image/productivity_dashboard.png" alt="Productivity Dashboard" />
+            </div>
+            <div class="project-info">
+              <h3>Productivity Dashboard</h3>
+              <p>
+                Interactive dashboard featuring a Pomodoro timer, dynamic daily planner, checklist, dark/light theme switching, and real-time weather updates.
               </p>
-              <div class="project_links_box">
+              <div class="card-tags">
+                <span>JavaScript</span>
+                <span>Weather API</span>
+                <span>CSS3</span>
+                <span>LocalStorage</span>
+              </div>
+              <div class="project-links">
                 <a
-                  target="_blank"
-                  rel="noopener noreferrer"
                   href="https://github.com/Sutharkailash4/productivity_dashborad.git"
-                  class="link_btn_anchor"
-                >
-                  <button class="link_btn">
-                    <span class="span-1">GitHub</span
-                    ><span class="span-2">GitHub</span>
-                  </button>
-                </a>
-                <a
                   target="_blank"
                   rel="noopener noreferrer"
+                  class="p-btn"
+                >
+                  <i class="ri-github-line"></i> Code
+                </a>
+                <a
                   href="https://productivity-dashboard-project.netlify.app/"
-                  class="link_btn_anchor"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="p-btn live"
                 >
-                  <button class="link_btn">
-                    <span class="span-1">Live Demo</span
-                    ><span class="span-2">Live Demo</span>
-                  </button>
+                  <i class="ri-external-link-line"></i> Live Demo
                 </a>
               </div>
             </div>
+          </div>
 
-            <div class="project_box">
-              <div class="project_img_wrapper">
-                <i class="ri-restaurant-line project_placeholder_icon"></i>
-              </div>
-              <h4 class="project_title">Food Recipe Application</h4>
-              <p class="project_description">
-                React SPA featuring full CRUD functionality, Context API state
-                management, LocalStorage auth, recipe favoriting, and dynamic
-                filtering.
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-preview">
+              <i class="ri-restaurant-line project-icon-large"></i>
+            </div>
+            <div class="project-info">
+              <h3>Food Recipe App</h3>
+              <p>
+                React single-page application with complete CRUD operations, state managed via Context API, user favorites, and live recipe filtering.
               </p>
-              <div class="project_links_box">
+              <div class="card-tags">
+                <span>React.js</span>
+                <span>Context API</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
                 <a
-                  target="_blank"
-                  rel="noopener noreferrer"
                   href="https://github.com/Sutharkailash4"
-                  class="link_btn_anchor"
-                >
-                  <button class="link_btn">
-                    <span class="span-1">GitHub</span
-                    ><span class="span-2">GitHub</span>
-                  </button>
-                </a>
-                <a
                   target="_blank"
                   rel="noopener noreferrer"
+                  class="p-btn"
+                >
+                  <i class="ri-github-line"></i> Code
+                </a>
+                <a
                   href="https://sutharkailash4.github.io"
-                  class="link_btn_anchor"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="p-btn live"
                 >
-                  <button class="link_btn">
-                    <span class="span-1">Live Demo</span
-                    ><span class="span-2">Live Demo</span>
-                  </button>
+                  <i class="ri-external-link-line"></i> Live Demo
                 </a>
               </div>
             </div>
+          </div>
 
-            <div class="project_box">
-              <div class="project_img_wrapper">
-                <img src="image/Mac-Os.png" alt="Mac OS Clone" />
-              </div>
-              <h4 class="project_title">macOS Clone</h4>
-              <p class="project_description">
-                Interactive macOS desktop replica utilizing React RND for
-                resizable and draggable window components.
+          <!-- Project 4 -->
+          <div class="project-card">
+            <div class="project-preview image-preview">
+              <img src="image/Mac-Os.png" alt="macOS Clone" />
+            </div>
+            <div class="project-info">
+              <h3>macOS Desktop Clone</h3>
+              <p>
+                Web-based replica of the macOS UI featuring desktop windows built with React RND for draggable, resizable window capabilities.
               </p>
-              <div class="project_links_box">
+              <div class="card-tags">
+                <span>React.js</span>
+                <span>React RND</span>
+                <span>CSS Grid</span>
+              </div>
+              <div class="project-links">
                 <a
-                  target="_blank"
-                  rel="noopener noreferrer"
                   href="https://github.com/Sutharkailash4/mac-os.git"
-                  class="link_btn_anchor"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="p-btn"
                 >
-                  <button class="link_btn">
-                    <span class="span-1">GitHub</span
-                    ><span class="span-2">GitHub</span>
-                  </button>
+                  <i class="ri-github-line"></i> Code
                 </a>
-                <button class="link_btn disable_btn" disabled>
-                  <span class="span-1">Live Demo</span
-                  ><span class="span-2">Live Demo</span>
-                </button>
+                <span class="p-btn disabled">
+                  <i class="ri-lock-line"></i> In Progress
+                </span>
               </div>
             </div>
+          </div>
 
-            <div class="project_box">
-              <div class="project_img_wrapper">
-                <img src="image/weather-app.png" alt="Weather App" />
-              </div>
-              <h4 class="project_title">Weather App</h4>
-              <p class="project_description">
-                Real-time weather tracking application fetching dynamic live
-                data using JavaScript Fetch API.
+          <!-- Project 5 -->
+          <div class="project-card">
+            <div class="project-preview image-preview">
+              <img src="image/weather-app.png" alt="Weather App" />
+            </div>
+            <div class="project-info">
+              <h3>Real-Time Weather Tracker</h3>
+              <p>
+                Weather application tracking conditions across global cities by fetching dynamic live data using JavaScript Fetch API.
               </p>
-              <div class="project_links_box">
+              <div class="card-tags">
+                <span>JavaScript</span>
+                <span>Fetch API</span>
+                <span>REST API</span>
+              </div>
+              <div class="project-links">
                 <a
+                  href="https://github.com/Sutharkailash4/javascript-mini-projects.git"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://github.com/Sutharkailash4/javascript-mini-projects.git"
-                  class="link_btn_anchor"
+                  class="p-btn"
                 >
-                  <button class="link_btn">
-                    <span class="span-1">GitHub</span
-                    ><span class="span-2">GitHub</span>
-                  </button>
+                  <i class="ri-github-line"></i> Code
                 </a>
                 <a
+                  href="https://weather-app-for-fetch.netlify.app"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://weather-app-for-fetch.netlify.app"
-                  class="link_btn_anchor"
+                  class="p-btn live"
                 >
-                  <button class="link_btn">
-                    <span class="span-1">Live Demo</span
-                    ><span class="span-2">Live Demo</span>
-                  </button>
+                  <i class="ri-external-link-line"></i> Live Demo
                 </a>
               </div>
             </div>
@@ -420,38 +412,44 @@
       </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-      <h3>Connect With Me</h3>
-      <div class="social_links_box">
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://linkedin.com/in/kailash-suthar-8a67263ab"
-          aria-label="LinkedIn"
-        >
-          <i class="ri-linkedin-fill"></i>
-        </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/Sutharkailash4"
-          aria-label="GitHub"
-        >
-          <i class="ri-github-line"></i>
-        </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.instagram.com/ksuthar0072/"
-          aria-label="Instagram"
-        >
-          <i class="ri-instagram-line"></i>
-        </a>
-        <a href="mailto:kailashsuthar4488@gmail.com" aria-label="Email">
-          <i class="ri-mail-line"></i>
-        </a>
+      <div class="footer-content">
+        <h2>Let's build something together.</h2>
+        <p>Open for full-time roles and projects.</p>
+
+        <div class="social-links">
+          <a
+            href="https://linkedin.com/in/kailash-suthar-8a67263ab"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <i class="ri-linkedin-fill"></i>
+          </a>
+          <a
+            href="https://github.com/Sutharkailash4"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <i class="ri-github-line"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/ksuthar0072/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <i class="ri-instagram-line"></i>
+          </a>
+          <a href="mailto:kailashsuthar4488@gmail.com" aria-label="Email">
+            <i class="ri-mail-line"></i>
+          </a>
+        </div>
+
+        <p class="copyright">&copy; 2026 Kailash Suthar. Built with care.</p>
       </div>
-      <p class="copyright">&copy; 2026 Kailash Suthar. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
