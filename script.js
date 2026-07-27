@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (menuBtn && navMenu) {
     menuBtn.addEventListener('click', () => {
       navMenu.classList.toggle('show');
+      console.log("Show");
       
       const icon = menuBtn.querySelector('i');
       if (icon) {
