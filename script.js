@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   const revealElements = document.querySelectorAll('.reveal');
 
-  // console.log("Working");
+  console.log("Working");
 
   function handleScrollReveal() {
     const windowHeight = window.innerHeight;
