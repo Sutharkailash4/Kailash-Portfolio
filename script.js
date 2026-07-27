@@ -15,8 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  console.log("Welcome to my portfolio! I'm excited to share my work and experiences with you. Feel free to explore the projects and get in touch if you'd like to collaborate or learn more about my journey in web development.");
-
   const navItems = document.querySelectorAll('.nav-item');
 
   navItems.forEach((item) => {
