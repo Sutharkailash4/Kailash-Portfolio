@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  console.log("Working");
+
   const navItems = document.querySelectorAll('.nav-item');
 
   navItems.forEach((item) => {
