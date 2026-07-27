@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // console.log("Working");
+  console.log("Working");
 
   const navItems = document.querySelectorAll('.nav-item');
 
