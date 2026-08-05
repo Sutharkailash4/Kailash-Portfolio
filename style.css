@@ -31,6 +31,10 @@ body {
     overflow-x: hidden;
 }
 
+/* 
+Navbar
+ */
+
 header {
     position: fixed;
     top: 0;
